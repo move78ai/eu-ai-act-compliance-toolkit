@@ -13,7 +13,7 @@
 
 This tool evaluates a specific FinTech boundary problem: fraud-detection AI can sit outside the Annex III high-risk credit-scoring route, but that exemption becomes fragile if the model objective, data architecture, or downstream use drifts into creditworthiness logic. The source page frames this as a **pipeline contamination** problem and uses the “contaminated well” analogy to explain why blended fraud and credit pipelines can drag the whole system into the high-risk regime.
 
-It is most useful for Chief Risk Officers, data architecture leads, compliance teams, CTOs, and legal counsel reviewing fraud, authentication, underwriting-adjacent, or transaction-risk systems. The interactive version also generates a downloadable/copyable **Architectural Segregation Assessment** record locally in the browser for internal governance and legal review. Source file confirmed from the uploaded HTML. :contentReference[oaicite:0]{index=0}
+It is most useful for Chief Risk Officers, data architecture leads, compliance teams, CTOs, and legal counsel reviewing fraud, authentication, underwriting-adjacent, or transaction-risk systems. The interactive version also generates a downloadable/copyable **Architectural Segregation Assessment** record locally in the browser for internal governance and legal review.
 
 ---
 
@@ -38,7 +38,7 @@ Add the three scores to produce a total out of **100**. Then apply the exact thr
 - [ ] Enter free text  
   Example: `Transaction Authentication Engine v3`
 
-> *Guidance: If left blank, the generated report uses `[UNNAMED SYSTEM]`.* Source file confirmed from the uploaded HTML. :contentReference[oaicite:1]{index=1}
+> *Guidance: If left blank, the generated report uses `[UNNAMED SYSTEM]`.*
 
 ---
 
@@ -50,7 +50,7 @@ Add the three scores to produce a total out of **100**. Then apply the exact thr
 - [ ] **Mixed Risk Scoring** — The model flags fraudulent behavior but simultaneously outputs a general "trust score" used by other departments. **(10 points)**
 - [ ] **Propensity to Repay (High-Risk)** — The model analyzes financial history to predict the likelihood of default or late payment. **(0 points)**
 
-> *Guidance: This is the first legal boundary test. The tool distinguishes pure fraud/authentication logic from mixed risk scoring and direct creditworthiness prediction. A model that predicts ability or willingness to repay is treated as the clearest high-risk path.* Source file confirmed from the uploaded HTML. :contentReference[oaicite:2]{index=2}
+> *Guidance: This is the first legal boundary test. The tool distinguishes pure fraud/authentication logic from mixed risk scoring and direct creditworthiness prediction. A model that predicts ability or willingness to repay is treated as the clearest high-risk path.*
 
 ---
 
@@ -62,7 +62,7 @@ Add the three scores to produce a total out of **100**. Then apply the exact thr
 - [ ] **Logically Tagged** — Data exists in the same repository but utilizes strict metadata tagging to restrict access to the fraud model. **(15 points)**
 - [ ] **Strictly Segregated (Defensible)** — The fraud detection model operates in an isolated environment with dedicated, specific data ingestion feeds. **(33 points)**
 
-> *Guidance: The tool treats black-box “same lake, different tags” separation as weaker than physical or architectural segregation. The strongest answer requires a distinct fraud environment with dedicated ingestion boundaries.* Source file confirmed from the uploaded HTML. :contentReference[oaicite:3]{index=3}
+> *Guidance: The tool treats black-box “same lake, different tags” separation as weaker than physical or architectural segregation. The strongest answer requires a distinct fraud environment with dedicated ingestion boundaries.*
 
 ---
 
@@ -74,7 +74,7 @@ Add the three scores to produce a total out of **100**. Then apply the exact thr
 - [ ] **Manual Underwriter Review** — The output is passed to a human credit officer as an advisory signal before they make a final lending decision. **(15 points)**
 - [ ] **Binary Authentication (Defensible)** — The output strictly acts as a gatekeeper. It either allows the transaction to proceed or blocks it for suspected fraud. **(33 points)**
 
-> *Guidance: This question tests what the model actually does in production. The strongest answer is a binary fraud-control gate. Once the output starts steering lending, pricing, or underwriting, the exemption becomes fragile or fails outright.* Source file confirmed from the uploaded HTML. :contentReference[oaicite:4]{index=4}
+> *Guidance: This question tests what the model actually does in production. The strongest answer is a binary fraud-control gate. Once the output starts steering lending, pricing, or underwriting, the exemption becomes fragile or fails outright.*
 
 ---
 
@@ -84,7 +84,7 @@ Add the three scores to produce a total out of **100**. Then apply the exact thr
 
 - [ ] I attest that the boundary definitions and pipeline logic for this system have been formally verified to ensure regulatory segregation.
 
-> *Guidance: The interactive tool blocks output unless this attestation is checked. The page positions this as a governance accountability control for Data Architecture leadership.* Source file confirmed from the uploaded HTML. :contentReference[oaicite:5]{index=5}
+> *Guidance: The interactive tool blocks output unless this attestation is checked. The page positions this as a governance accountability control for Data Architecture leadership.*
 
 ---
 
@@ -105,7 +105,7 @@ If any of the three is unanswered, the interactive tool stops and shows:
 You must also check the architectural attestation.  
 If not checked, the interactive tool stops and shows:
 
-**Action Required: You must verify the architectural attestation before proceeding.** Source file confirmed from the uploaded HTML. :contentReference[oaicite:6]{index=6}
+**Action Required: You must verify the architectural attestation before proceeding.**
 
 ---
 
@@ -123,9 +123,7 @@ Possible values:
 * Q3 = 33 / 15 / 0
 * Q4 = 33 / 15 / 0
 
-Maximum score = **100**. Source file confirmed from the uploaded HTML. 
-
----
+Maximum score = **100**.---
 
 ### Step 3 — Interpret the result band
 
@@ -199,11 +197,7 @@ Critical Compliance Failures:
 
 Resolution Strategy:
 Immediate action required. You must formally reclassify this entire unified pipeline as a High-Risk Annex III system. You are now legally obligated to comply with the entirety of Articles 8 through 15 before market deployment.
-```
-
-Source file confirmed from the uploaded HTML. 
-
----
+```---
 
 ### Decision Logic Summary
 
@@ -224,9 +218,7 @@ The thresholds in the source code are:
 That means:
 
 * A score of **40** is still **vulnerable**, not compliant.
-* The only fully successful outcome is **100/100**. Source file confirmed from the uploaded HTML. 
-
----
+* The only fully successful outcome is **100/100**.---
 
 ### Generated Output Structure
 
@@ -249,9 +241,7 @@ Execution Environment: Local Browser (Zero Cloud Sync)
 
 The interactive tool also displays this implementation note below the output:
 
-*This report analyzes architectural liability. Export this directly to your legal counsel to justify Annex III exemptions before a regulatory audit.* Source file confirmed from the uploaded HTML. 
-
----
+*This report analyzes architectural liability. Export this directly to your legal counsel to justify Annex III exemptions before a regulatory audit.*---
 
 ## What to Do Next
 
@@ -272,7 +262,5 @@ This self-assessment is for educational and informational purposes only. It does
 
 **🔗 [Try the interactive version of this tool →](https://euaicompass.com/fraud-credit-delimiter.html)**
 
-*Built by [Move78 International Limited](https://move78int.com) · [EU AI Compass](https://euaicompass.com) · [All 28 Tools →](../README.md)*
+*Built by [Move78 International Limited](https://move78int.com) · [EU AI Compass](https://euaicompass.com) · [All 26 Tools →](../README.md)*
 
-```
-```

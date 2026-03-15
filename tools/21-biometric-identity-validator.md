@@ -270,7 +270,5 @@ This self-assessment is for educational and informational purposes only. It does
 
 **🔗 [Try the interactive version of this tool →](https://euaicompass.com/biometric-identity-validator.html)**
 
-*Built by [Move78 International Limited](https://move78int.com) · [EU AI Compass](https://euaicompass.com) · [All 28 Tools →](../README.md)*
+*Built by [Move78 International Limited](https://move78int.com) · [EU AI Compass](https://euaicompass.com) · [All 26 Tools →](../README.md)*
 
-```
-```
